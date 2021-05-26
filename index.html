@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ATM</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <p>This is a simulation of how an ATM manage his bucks</p>
+    <div>
+      <p id="total"></p>
+      <li id="fifty"></li>
+      <li id="twenty"></li>
+      <li id="ten"></li>
+    </div>
+    <br />
+    <div>
+      <label for="withdraw">Withdraw bucks: </label>
+      <input id="withdraw" type="number" onchange="inputMask()" />
+      <button onclick="withdraw()">Accept</button>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
