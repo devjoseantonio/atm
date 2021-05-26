@@ -1,26 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ATM</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>devjoseantonio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+    <script src="js/main.js"></script>
   </head>
   <body>
-    <p>This is a simulation of how an ATM manage his bucks</p>
-    <div>
-      <p id="total"></p>
-      <li id="fifty"></li>
-      <li id="twenty"></li>
-      <li id="ten"></li>
+    <header>
+      <a href="https://devjoseantonio.com">devjoseantonio</a>
+    </header>
+    <div class="main-content">
+      <p>This is a simulation of how an ATM manage his bucks</p>
+      <div>
+        <p id="total"></p>
+        <li id="fifty"></li>
+        <li id="twenty"></li>
+        <li id="ten"></li>
+      </div>
+      <br />
+      <div>
+        <label for="withdraw">Withdraw bucks: </label>
+        <input id="withdraw" type="number" onchange="inputMask()" />
+        <button onclick="withdraw()">Accept</button>
+      </div>
     </div>
-    <br />
-    <div>
-      <label for="withdraw">Withdraw bucks: </label>
-      <input id="withdraw" type="number" onchange="inputMask()" />
-      <button onclick="withdraw()">Accept</button>
-    </div>
+    <footer>
+      📫 How to reach me
+      <ul>
+        <li>
+          ✉️ Email:
+          <a href="mailto:admin@devjoseantonio.com">admin@devjoseantonio.com</a>
+        </li>
+        <li>
+          💬 WhatsApp:
+          <a
+            href="https://wa.me/573013176733?text=I'm%20interested%20in%20a%20web%20for%20my%20business"
+            >+57 (301) 317 67 33</a
+          >
+        </li>
+        <li>
+          🐦 Twitter:
+          <a href="https://twitter.com/devjoseantonio">@devjoseantonio</a>
+        </li>
+        <li>
+          💻 Github:
+          <a href="https://github.com/devjoseantonio">devjoseantonio</a>
+        </li>
+      </ul>
+    </footer>
     <script src="main.js"></script>
   </body>
 </html>
