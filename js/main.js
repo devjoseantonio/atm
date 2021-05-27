@@ -37,6 +37,15 @@ function inputMask() {
   if (isNaN(parseInt(document.getElementById("withdraw").value))) {
     document.getElementById("withdraw").value = 0;
   }
+  if (isNaN(parseInt(document.getElementById("fifty-bucks").value))) {
+    document.getElementById("fifty-bucks").value = 0;
+  }
+  if (isNaN(parseInt(document.getElementById("twenty-bucks").value))) {
+    document.getElementById("twenty-bucks").value = 0;
+  }
+  if (isNaN(parseInt(document.getElementById("ten-bucks").value))) {
+    document.getElementById("ten-bucks").value = 0;
+  }
 }
 inputMask();
 printInf();

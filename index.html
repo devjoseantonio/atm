@@ -29,64 +29,112 @@
     ></script>
   </head>
   <body>
-    <header class="navbar">
-      <a href="https://devjoseantonio.com">devjoseantonio</a>
-    </header>
-    <div class="main-content">
-      <h2>ATM algorhythm</h2>
-      <p>This is an algorhythm of how an ATM work with his bucks</p>
-      <p>Let's say has bucks of 50, 20, 10, then:</p>
-      <div>
-        <p id="total"></p>
-        <li id="fifty"></li>
-        <li id="twenty"></li>
-        <li id="ten"></li>
+    <div class="container">
+      <header class="navbar">
+        <a href="https://devjoseantonio.com">devjoseantonio</a>
+      </header>
+      <div class="main-content">
+        <h2>ATM algorhythm</h2>
+        <p>This is an algorhythm of how an ATM work with his bucks</p>
+        <p>Let's say has bucks of 50, 20, 10, then:</p>
+        <div>
+          <p id="total"></p>
+          <li id="fifty"></li>
+          <li id="twenty"></li>
+          <li id="ten"></li>
+        </div>
+        <br />
+        <p>Ok, now let's define some rules:</p>
+        <ul>
+          <li>
+            <p>
+              If the person withdraw a value greather or equal to 80 then the
+              ATM will give him at tealst 2 small bucks
+            </p>
+            <p>
+              Example: 100 will give 50, 20, 20, 10. 90 will give 50, 20, 20. 80
+              will give 50, 20, 10
+            </p>
+          </li>
+          <li>
+            <p>
+              If the ATM has no enough money will show a message and will no
+              give a single buck
+            </p>
+          </li>
+          <li>
+            <p>
+              The minimum amount of money to withdraw is 10 and the maximum is
+              the ATM total shown on top of the rules
+            </p>
+          </li>
+        </ul>
+        <div>
+          <div class="form-group">
+            <p>Deposit "money":</p>
+            <label for="fifty-bucks">50 bucks</label>
+            <input
+              id="fifty-bucks"
+              type="tel"
+              class="form-control"
+              onchange="inputMask()"
+            />
+            <label for="twenty-bucks">20 bucks</label>
+            <input
+              id="twenty-bucks"
+              type="tel"
+              class="form-control"
+              onchange="inputMask()"
+            />
+            <label for="ten-bucks">10 bucks</label>
+            <input
+              id="ten-bucks"
+              type="tel"
+              class="form-control"
+              onchange="inputMask()"
+            />
+          </div>
+          <div>
+            <label for="withdraw">Withdraw "money"</label>
+            <input
+              id="withdraw"
+              type="tel"
+              class="form-control"
+              onchange="inputMask()"
+            />
+          </div>
+          <br />
+          <button class="btn btn-primary" onclick="withdraw()">Accept</button>
+        </div>
       </div>
       <br />
-      <p>Ok, now let's define some rules:</p>
-      <ul>
-        <li>
-          <p>
-            If the person withdraw a value greather or equal to 80 then the ATM
-            will give him at tealst 2 small bucks
-          </p>
-          <p>
-            Example: 100 will give 50, 20, 20, 10. 90 will give 50, 20, 20. 80
-            will give 50, 20, 10
-          </p>
-        </li>
-      </ul>
-      <div>
-        <label for="withdraw">Withdraw "money": </label>
-        <input id="withdraw" type="tel" onchange="inputMask()" />
-        <button onclick="withdraw()">Accept</button>
-      </div>
+      <footer class="page-footer">
+        📫 How to reach me
+        <ul>
+          <li>
+            ✉️ Email:
+            <a href="mailto:admin@devjoseantonio.com"
+              >admin@devjoseantonio.com</a
+            >
+          </li>
+          <li>
+            💬 WhatsApp:
+            <a
+              href="https://wa.me/573013176733?text=I'm%20interested%20in%20a%20web%20for%20my%20business"
+              >+57 (301) 317 67 33</a
+            >
+          </li>
+          <li>
+            🐦 Twitter:
+            <a href="https://twitter.com/devjoseantonio">@devjoseantonio</a>
+          </li>
+          <li>
+            💻 Github:
+            <a href="https://github.com/devjoseantonio">devjoseantonio</a>
+          </li>
+        </ul>
+      </footer>
     </div>
-    <br />
-    <footer class="page-footer">
-      📫 How to reach me
-      <ul>
-        <li>
-          ✉️ Email:
-          <a href="mailto:admin@devjoseantonio.com">admin@devjoseantonio.com</a>
-        </li>
-        <li>
-          💬 WhatsApp:
-          <a
-            href="https://wa.me/573013176733?text=I'm%20interested%20in%20a%20web%20for%20my%20business"
-            >+57 (301) 317 67 33</a
-          >
-        </li>
-        <li>
-          🐦 Twitter:
-          <a href="https://twitter.com/devjoseantonio">@devjoseantonio</a>
-        </li>
-        <li>
-          💻 Github:
-          <a href="https://github.com/devjoseantonio">devjoseantonio</a>
-        </li>
-      </ul>
-    </footer>
     <script src="js/main.js"></script>
   </body>
 </html>
