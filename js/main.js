@@ -25,8 +25,12 @@ function printInf() {
 }
 
 function withdraw() {
+  var bArray = [];
   var value = parseInt(document.getElementById("withdraw").value);
-  console.log(value);
+  var i = value;
+  do {
+    
+  } while(i < 0);
 }
 
 function inputMask() {
