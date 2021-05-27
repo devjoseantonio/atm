@@ -32,9 +32,9 @@ header {
 }
 
 header a {
-  color: #323232;
+  color: #323232 !important;
   background-color: #fff;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .main-content {
