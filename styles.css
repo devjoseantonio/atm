@@ -1,58 +1,34 @@
-@font-face {
-  font-family: "astro-space";
-  src: url("webfont.otf");
-  src: url("fonts/AstroSpace.ttf") format("truetype");
-}
-
 html,
 body {
-  font-family: Roboto, sans-serif;
-  background-color: #eaefef !important;
-  color: #323232 !important;
-  margin: 0;
   width: 100%;
-  height: 100%;
+  color: #212529;
+  background-color: #efefff;
 }
-
-.container {
-  min-height: 100%;
-  position: relative;
-  margin: 0;
-  padding: 0 !important;
-  border: 0;
-  min-width: 100% !important;
-}
-
-header {
-  color: #323232;
-  background-color: #fff;
-  width: 100%;
-  padding: 1em;
-  font-family: astro-space;
-}
-
-header a {
-  color: #323232 !important;
-  background-color: #fff;
+a:hover {
   text-decoration: none !important;
 }
 
-.main-content {
-  padding: 1em;
-  height: 100%;
-  padding-bottom: 150px;
-}
-
+header,
 footer {
-  width: 100%;
-  color: #fff;
-  background-color: #323232;
   padding: 1em;
-  position: absolute;
-  bottom: 0;
-  height: 150px;
 }
 
-footer a {
+header a:hover{
+  color: #323232
+}
+
+footer a:hover{
   color: hotpink;
+}
+
+.container {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin: 0 !important;
+  min-width: 100%;
+}
+
+.main-content {
+  color: #212529;
+  background-color: #efefff;
 }
